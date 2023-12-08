@@ -5,7 +5,47 @@ import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalance
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
 
-const Widget = () => {
+const Widget = ( {type}) => {
+    let data;
+
+    switch(type) {
+        case "user":
+            data = {
+                title: USERS,
+                isMoney: false,
+                link: "See All Users",
+                icon: <PersonOutlinedIcon className="icon" />,
+    };
+    break;
+    case "orders":
+            data = {
+                title: orders,
+                isMoney: false,
+                link: "View All orders",
+                icon: <ShoppingCartOutlinedIcon className="icon" />,
+    };
+    break;
+    case "earnings":
+            data = {
+                title: EARNINGS,
+                isMoney: true,
+                link: "View net earnings",
+                icon: <MonetizationOnOutlinedIcon className="icon" />,
+    };
+    break;
+    case "balance":
+            data = {
+                title: BALANCE,
+                isMoney: true,
+                link: "See ",
+                icon: <AccountBalanceWalletOutlinedIcon className="icon"/>,
+    };
+    break;
+    
+}
+
+
+
   return (
     <div className="widget">
         <div className="left">
