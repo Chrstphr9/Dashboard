@@ -31,7 +31,7 @@ const Navbar = () => {
           </div>
           <div className="item">
             < ChatBubbleOutlineOutlinedIcon/>
-          </div>
+          </div> 
           <div className="item">
             < ListOutlinedIcon/>
           </div>
