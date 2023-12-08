@@ -8,6 +8,9 @@ import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlin
 const Widget = ( {type}) => {
     let data;
 
+    const amount = 100;
+    const diff = 20
+
     switch(type) {
         case "user":
             data = {
