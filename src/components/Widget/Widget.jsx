@@ -1,8 +1,11 @@
-import "./Widget.css"
+import "./Widget.scss"
 
 const Widget = () => {
   return (
-    <div>Widget</div>
+    <div className="widget">
+        <div className="left">Left</div>
+        <div className="right">Right</div>
+    </div>
   )
 }
 
