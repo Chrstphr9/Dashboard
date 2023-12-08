@@ -21,52 +21,60 @@ const Sidebar = () => {
         <hr />
         <div className="center">
             <ul>
+                <p className="titles">MAIN</p>
                 <li>
-                <DashboardIcon />
+                <DashboardIcon className="icon" />
                     <span>Dashboard</span>
                 </li>
+
+                <p className="titles">LISTS</p>
                 <li>
-                    <Person2OutlinedIcon/>
+                    <Person2OutlinedIcon className="icon"/>
                     <span>Users</span>
                 </li>
                 <li>
-                    <StoreIcon />
+                    <StoreIcon className="icon" />
                     <span>Products</span>
                 </li>
                 <li>
-                    <CreditCardIcon />
+                    <CreditCardIcon className="icon" />
                     <span>Orders</span>
                 </li>
                 <li>
-                    <LocalShippingIcon />
+                    <LocalShippingIcon className="icon" />
                     <span>Dilvery</span>
                 </li>
+
+                <p className="titles">USEFUL</p>
                 <li>
-                <InsertChartIcon />
+                <InsertChartIcon className="icon" />
                     <span>Stats</span>
                 </li>
                 <li>
-                    <NotificationsNoneIcon />
+                    <NotificationsNoneIcon className="icon" />
                     <span>Notifications</span>
                 </li>
+
+                <p className="titles">SERVICES</p>
                 <li>
-                    <SettingsSystemDaydreamOutlinedIcon  />
+                    <SettingsSystemDaydreamOutlinedIcon className="icon" />
                     <span>System Health</span>
                 </li>
                 <li>
-                    <PsychologyOutlinedIcon />
+                    <PsychologyOutlinedIcon className="icon" />
                     <span>Logs</span>
                 </li>
                 <li>
-                    <SettingsApplicationsIcon />
+                    <SettingsApplicationsIcon className="icon" />
                     <span>Settings</span>
                 </li>
+                <p className="titles">USER</p>
                 <li>
-                    <AccountCircleOutlinedIcon />
+                    <AccountCircleOutlinedIcon className="icon" />
                     <span>Profile</span>
                 </li>
                 <li>
-                    <ExitToAppIcon />
+                    <ExitToAppIcon className="icon" />
                     <span>Logout</span>
                 </li>
             </ul>
