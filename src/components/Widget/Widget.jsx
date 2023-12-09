@@ -16,7 +16,13 @@ const Widget = ({ type }) => {
                 title: "Users",
                 isMoney: false,
                 link: "See All Users",
-                icon: <PersonOutlinedIcon className="icon" />,
+                icon: <PersonOutlinedIcon 
+                className="icon" 
+                style={{
+                    color: "crimson",
+                    backgroundColor: "rgba(225, 0, 0, 0.2)",
+                }} 
+                />,
             };
             break;
         case "order":
@@ -24,7 +30,12 @@ const Widget = ({ type }) => {
                 title: "Order",
                 isMoney: false,
                 link: "View All Orders",
-                icon: <ShoppingCartOutlinedIcon className="icon" />,
+                icon: <ShoppingCartOutlinedIcon className="icon" 
+                style={{
+                    color: "goldenrod",
+                    backgroundColor: "rgba(218, 165, 32, 0.2)",
+                }} 
+                />,
             };
             break;
         case "balance":
@@ -32,7 +43,12 @@ const Widget = ({ type }) => {
                 title: "Balance",
                 isMoney: true,
                 link: "See Balance",
-                icon: <AccountBalanceWalletOutlinedIcon className="icon" />,
+                icon: <AccountBalanceWalletOutlinedIcon className="icon"
+                style={{
+                    color: "purple",
+                    backgroundColor: "rgba(128, 0, 128, 0.2)",
+                }} 
+                />,
             };
             break;
         default:
@@ -41,7 +57,12 @@ const Widget = ({ type }) => {
                 title: "Earnings",
                 isMoney: true,
                 link: "View Net Earnings",
-                icon: <MonetizationOnOutlinedIcon className="icon" />,
+                icon: <MonetizationOnOutlinedIcon className="icon" 
+                style={{
+                    color: "green",
+                    backgroundColor: "rgba(0, 128, 0, 0.2)",
+                }} 
+                />,
             };
             break;
     }
