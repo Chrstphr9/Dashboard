@@ -1,70 +1,67 @@
-import "./Widget.scss"
+import "./Widget.scss";
 import ExpandLessOutlinedIcon from '@mui/icons-material/ExpandLessOutlined';
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
 
-const Widget = ( {type}) => {
+const Widget = ({ type }) => {
     let data;
-
     const amount = 100;
-    const diff = 20
+    const diff = 20;
 
-    switch(type) {
+    switch (type) {
         case "user":
             data = {
-                title: USERS,
+                title: "Users",
                 isMoney: false,
                 link: "See All Users",
                 icon: <PersonOutlinedIcon className="icon" />,
-    };
-    break;
-    case "orders":
+            };
+            break;
+        case "order":
             data = {
-                title: orders,
+                title: "Order",
                 isMoney: false,
-                link: "View All orders",
+                link: "View All Orders",
                 icon: <ShoppingCartOutlinedIcon className="icon" />,
-    };
-    break;
-    case "earnings":
+            };
+            break;
+        case "balance":
             data = {
-                title: EARNINGS,
+                title: "Balance",
                 isMoney: true,
-                link: "View net earnings",
+                link: "See Balance",
+                icon: <AccountBalanceWalletOutlinedIcon className="icon" />,
+            };
+            break;
+        default:
+            case "earnings":
+            data = {
+                title: "Earnings",
+                isMoney: true,
+                link: "View Net Earnings",
                 icon: <MonetizationOnOutlinedIcon className="icon" />,
-    };
-    break;
-    case "balance":
-            data = {
-                title: BALANCE,
-                isMoney: true,
-                link: "See ",
-                icon: <AccountBalanceWalletOutlinedIcon className="icon"/>,
-    };
-    break;
-    
-}
+            };
+            break;
+    }
 
-
-
-  return (
-    <div className="widget">
-        <div className="left">
-            <span className="title">USEERS</span>
-            <span className="counter">21312</span>
-            <span className="link">See All Users</span>
-        </div>
-        <div className="right">
-            <div className="percentage positive">
-            <ExpandLessOutlinedIcon />
-                20%
+    return (
+        <div className="widget">
+            <div className="left">
+                <span className="title">{data.title}</span>
+                <span className="counter">{data.isMoney && "$"}{amount}</span>
+                <span className="link">{data.link}</span>
             </div>
-            < PersonOutlinedIcon className="icon "/>
+            <div className="right">
+                <div className="percentage positive">
+                    <ExpandLessOutlinedIcon />
+                    {diff}%
+                </div>
+                {data.icon}
+            </div>
         </div>
-    </div>
-  )
-}
+    );
+};
 
-export default Widget
+export default Widget;
