@@ -11,6 +11,9 @@ const Featured = () => {
         <MoreVerticon fontSize='small' />
       </div>
       <div className="bottom">
+        <div className="featuredChart">
+          
+        </div>
         
       </div>
     </div>
