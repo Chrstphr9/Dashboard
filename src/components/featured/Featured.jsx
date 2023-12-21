@@ -1,8 +1,17 @@
-import './Feature.scss'
+import './Featured.scss'
 
 const Featured = () => {
   return (
-    <div>Featured</div>
+    <div className='featured'>
+      <div className="top">
+        <h1 className="title">
+          Total Revenue
+        </h1>
+      </div>
+      <div className="bottom">
+        
+      </div>
+    </div>
   )
 }
 
