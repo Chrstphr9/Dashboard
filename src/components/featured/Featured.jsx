@@ -1,3 +1,4 @@
+import MoreVerticon  from '@mui/icons-material/MoreVert'
 import './Featured.scss'
 
 const Featured = () => {
@@ -7,6 +8,7 @@ const Featured = () => {
         <h1 className="title">
           Total Revenue
         </h1>
+        <MoreVerticon fontSize='small' />
       </div>
       <div className="bottom">
         
