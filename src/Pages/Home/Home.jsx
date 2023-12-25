@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar/Navbar"
 import Sidebar from "../../components/Sidebar/Sidebar"
+import Table from "../../components/Table/Table"
 import Widget from "../../components/Widget/Widget"
 import Chart from "../../components/chart/Chart"
 import Featured from "../../components/featured/Featured"
@@ -23,6 +24,7 @@ const Home = () => {
         </div>
         <div className="listContainer">
           <div className="listTitle">Latest Transaction</div>
+          <Table />
         </div>
       </div>
     </div>
