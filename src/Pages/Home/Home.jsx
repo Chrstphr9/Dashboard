@@ -1,8 +1,8 @@
-import Navbar from "../../components/Navbar/Navbar"
-import Sidebar from "../../components/Sidebar/Sidebar"
+import Navbar from "../../Components/Navbar/Navbar"
+import Sidebar from "../../Components/Sidebar/Sidebar"
+import Chart from "../../components/Chart/Chart"
 import Table from "../../components/Table/Table"
 import Widget from "../../components/Widget/Widget"
-import Chart from "../../components/chart/Chart"
 import Featured from "../../components/featured/Featured"
 import "./home.scss"
 
