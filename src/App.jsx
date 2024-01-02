@@ -1,5 +1,4 @@
 import { useState } from 'react'
-
 import './App.css'
 import Home from './Pages/Home/Home'
 import Login from './Pages/Login/Login'
@@ -9,11 +8,12 @@ import New from './Pages/New/New'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { productInputs, userInputs } from './formSource'
 import "./Style/dark.scss"
+
+
 function App() {
 
-
   return (
-   <div className="app dark">
+   <div className={"app"}>
     <Router>
     <Routes>
       <Route path="/"> 
