@@ -8,11 +8,13 @@ import Single from './Pages/Single/Single'
 import New from './Pages/New/New'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { productInputs, userInputs } from './formSource'
+import "./Style/dark.scss"
 function App() {
 
 
   return (
-   <Router>
+   <div className="app dark">
+    <Router>
     <Routes>
       <Route path="/"> 
         <Route index element={<Home />} />
@@ -30,6 +32,7 @@ function App() {
       </Route>
     </Routes>
    </Router>
+   </div>
   )
 }
 

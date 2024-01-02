@@ -12,13 +12,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: rebeccapurple;
-
+        
         .search {
             display: flex;
             align-items: center;
             border: 0.5px solid lightgray;
             padding: 3px;
+            border-radius: 10px;
         }
 
         input {
@@ -40,7 +40,6 @@
                 align-items: center;
                 margin-right: 20px;
                 position: relative;
-                background-color: yellow;
 
                 .icon {
                     font-size: 20px;
